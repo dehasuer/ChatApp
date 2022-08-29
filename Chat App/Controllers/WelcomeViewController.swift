@@ -7,26 +7,30 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: CLTypingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = ""
+//        titleLabel.text = ""
+//
+//        var charIndex = 0
+//
+//        let titleText = "ChatApp"
+//
+//        for letter in titleText {
+//            Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
+//                self.titleLabel.text?.append(letter)
+//            }
+//            charIndex += 1
+//        }
         
-        var charIndex = 0
+        titleLabel.text = "Chat App"
         
-        let titleText = "ChatApp"
-        
-        for letter in titleText {
-            Timer.scheduledTimer(withTimeInterval: 0.1 * Double(charIndex), repeats: false) { (timer) in
-                self.titleLabel.text?.append(letter)
-            }
-            charIndex += 1
-        }
         
        
     }
