@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
 //            charIndex += 1
 //        }
         
-        titleLabel.text = "Chat App"
+        titleLabel.text = K.appName
         
         
        
